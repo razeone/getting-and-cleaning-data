@@ -92,4 +92,4 @@ library(plyr)
 # nice
 tidyDataFrame = ddply(cleanData, c("subject","activity"), numcolwise(mean))
 # And finally write our second data frame
-write.table(tidyDataFrame, "tidy_data.txt")
+write.table(tidyDataFrame, "tidy_data.txt", row.names = F)
